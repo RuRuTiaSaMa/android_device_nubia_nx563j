@@ -1,0 +1,2 @@
+add_lunch_combo aosp_nx563j-userdebug
+add_lunch_combo aosp_nx563j-eng
