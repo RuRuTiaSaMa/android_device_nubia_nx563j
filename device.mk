@@ -88,7 +88,4 @@ PRODUCT_PACKAGES += \
 # Key disabler
 JAVA_SOURCE_OVERLAYS := org.pixelexperience.keydisabler|$(VENDOR_PATH)/keydisabler|**/*.java
 
-# ConfigPanel
-PRODUCT_PACKAGES += \
-    ConfigPanel
 
