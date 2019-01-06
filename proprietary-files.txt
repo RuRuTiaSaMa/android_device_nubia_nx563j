@@ -13,8 +13,8 @@ etc/firmware/tas2555_uCDSP.bin:vendor/firmware/tas2555_uCDSP.bin
 # Alipay
 vendor/lib/libteeclientjni.so
 vendor/lib64/libteeclientjni.so
--framework/ifaa_fingerprint.jar
--priv-app/FingerprintServiceExtension/FingerprintServiceExtension.apk
+-framework/ifaa_fingerprint.jar:vendor/framework/ifaa_fingerprint.jar
+-priv-app/FingerprintServiceExtension/FingerprintServiceExtension.apk:vendor/app/FingerprintServiceExtension/FingerprintServiceExtension.apk
 
 # CameraHAL
 vendor/lib/hw/camera.msm8998.so:vendor/lib/hw/camera.vendor.msm8998.so
@@ -385,16 +385,7 @@ vendor/lib/libmmcamera_imx362_eeprom.so
 vendor/lib/libmmcamera_s5k3p3_front_eeprom.so
 
 # Camera firmware
-vendor/firmware/cpp_firmware_v1_1_1.fw
-vendor/firmware/cpp_firmware_v1_1_6.fw
-vendor/firmware/cpp_firmware_v1_10_0.fw
 vendor/firmware/cpp_firmware_v1_12_0.fw
-vendor/firmware/cpp_firmware_v1_2_0.fw
-vendor/firmware/cpp_firmware_v1_4_0.fw
-vendor/firmware/cpp_firmware_v1_5_0.fw
-vendor/firmware/cpp_firmware_v1_5_2.fw
-vendor/firmware/cpp_firmware_v1_6_0.fw
-vendor/firmware/cpp_firmware_v1_8_0.fw
 
 # Camera nubia firmware
 vendor/etc/firmware/miniBoot.bin
@@ -493,8 +484,6 @@ etc/.tp/.thermal-mode-01-04.conf
 # TP firmware
 etc/firmware/nubia_tp_jdi_fw.img:vendor/firmware/nubia_tp_jdi_fw.img
 
-# Widevine - from NX609J - OPM1.171019.011 factory image
-vendor/lib/mediadrm/libwvdrmengine.so|6d0a89adc41c008a567658459ec460a301813c7d
 
 # Misc
 etc/firmware/main_alOtp.bin:vendor/firmware/main_alOtp.bin
