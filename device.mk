@@ -86,6 +86,6 @@ PRODUCT_PACKAGES += \
     init.nubia.touch.lcd.rc
 
 # Key disabler
-JAVA_SOURCE_OVERLAYS := org.pixelexperience.keydisabler|$(VENDOR_PATH)/keydisabler|**/*.java
+JAVA_SOURCE_OVERLAYS := org.pixelexperience.keydisabler|$(LOCAL_PATH)/keydisabler|**/*.java
 
 
