@@ -89,4 +89,7 @@ PRODUCT_PACKAGES += \
 # Key disabler
 JAVA_SOURCE_OVERLAYS := org.pixelexperience.keydisabler|$(LOCAL_PATH)/keydisabler|**/*.java
 
+# properties
+-include $(LOCAL_PATH)/vendor_prop.mk
+
 
