@@ -27,8 +27,10 @@
 -include device/nubia/msm8998-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/nubia/nx563j
+
 # Assertions
-TARGET_OTA_ASSERT_DEVICE := nx563j
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+TARGET_OTA_ASSERT_DEVICE := nx563j,NX563J
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
