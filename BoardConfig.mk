@@ -36,7 +36,7 @@ TARGET_OTA_ASSERT_DEVICE := nx563j,NX563J
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineage_NX563J_defconfig
+TARGET_KERNEL_CONFIG := PixelExperience_NX563J_defconfig
 
 # SELinux
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
