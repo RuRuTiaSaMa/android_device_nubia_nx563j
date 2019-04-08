@@ -1,2 +1,4 @@
-# Allow ConfigPanel to work
-allow system_app sysfs_tp_revkeys:file rw_file_perms;
+# Allow NubiaParts to work
+set_prop(system_app, swapbuttons_prop)
+set_prop(system_app, palmsleep_prop)
+set_prop(system_app, usbfastcharge_prop)
