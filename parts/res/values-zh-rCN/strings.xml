@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014-2017 The OmniROM Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <string name="app_name">高级设置</string>
+
+    <!-- Palm Sleep -->
+    <string name="display_title">显示</string>
+    <string name="palm_sleep_title">盖掌睡眠</string>
+    <string name="palm_sleep_summary">盖住屏幕使手机睡眠</string>
+
+    <!-- Swap HW buttons -->
+    <string name="hw_buttons_title">设备按键</string>
+    <string name="swap_hw_buttons_title">交换按键</string>
+    <string name="swap_hw_buttons_summary">交换最近任务键和返回键位置</string>
+
+    <!-- usb fastcharge -->
+    <string name="charge_title">充电</string>
+    <string name="usb_fastcharge_title">启用 USB 快速充电</string>
+    <string name="usb_fastcharge_summary">当连接至电脑 USB 3.X 启用 USB 快速充电 </string>
+</resources>

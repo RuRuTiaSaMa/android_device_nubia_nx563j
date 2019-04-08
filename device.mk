@@ -77,6 +77,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-brcm-20797b00.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-brcm-20797b00.conf \
     $(LOCAL_PATH)/configs/nfc/nfcee_access.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/nfcee_access.xml 
 
+# NubiaParts
+PRODUCT_PACKAGES += \
+    NubiaParts
+
 # Ramdisk scripts
 PRODUCT_PACKAGES += \
     init.nubia.touch.lcd.rc

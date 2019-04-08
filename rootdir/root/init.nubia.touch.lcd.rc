@@ -49,6 +49,8 @@ on post-fs-data
     symlink /sys/bus/i2c/devices/5-0020/wake_gesture /data/tp/easy_wakeup_gesture
     chown system system /sys/bus/i2c/devices/5-0020/palm_sleep
     symlink /sys/bus/i2c/devices/5-0020/palm_sleep /data/tp/easy_sleep_palm
+    chown system system /sys/bus/i2c/devices/5-0020/swap_buttons
+    symlink /sys/bus/i2c/devices/5-0020/swap_buttons /data/tp/swap_buttons
     write /sys/bus/i2c/devices/5-0020/start_update 1
     chown system system /sys/kernel/lcd_enhance/colortmp
     chown system system /sys/kernel/lcd_enhance/saturation
@@ -61,6 +63,10 @@ on post-fs-data
     symlink /sys/bus/i2c/devices/5-0020/read_rt3 /data/tp/read_rt3
     chown system system /sys/bus/i2c/devices/5-0020/start_user_update
     symlink /sys/bus/i2c/devices/5-0020/start_user_update /data/tp/start_user_update
+    
+    # USB Fastcharge
+    chown system system /sys/kernel/fast_charge/force_fast_charge
+    chmod 0660 /sys/kernel/fast_charge/force_fast_charge
 
 #nubia, tp&lcd node end
 
@@ -74,13 +80,11 @@ on property:gsm.call.other_to_gsm=2
     write /sys/bus/i2c/devices/5-0020/menu 147
     write /sys/bus/i2c/devices/5-0020/back 166
 
-#nubia for 8064test, donot use this for blanking
-#on property:sys.lcd.blank=*
-#    write /sys/class/graphics/fb0/blank ${sys.lcd.blank}
+on property:persist.gesture.swapbuttons=*
+    write /sys/bus/i2c/devices/5-0020/swap_buttons ${persist.gesture.swapbuttons}
 
-on property:sys.tp.wakeup=*
-    write /sys/bus/i2c/devices/5-0020/wake_gesture ${sys.tp.wakeup}
-
-on property:sys.tp.palmsleep=*
-    write /sys/bus/i2c/devices/5-0020/palm_sleep ${sys.tp.palmsleep}
-#nubia end
+on property:persist.gesture.palmsleep=*
+    write /sys/bus/i2c/devices/5-0020/palm_sleep ${persist.gesture.palmsleep}
+    
+on property:persist.gesture.usbfastcharge=*
+    write /sys/kernel/fast_charge/force_fast_charge ${persist.gesture.usbfastcharge}
