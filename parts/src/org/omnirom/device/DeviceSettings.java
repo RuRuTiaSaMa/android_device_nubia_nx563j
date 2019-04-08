@@ -59,7 +59,7 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String BUTTONS_SWAP_PROP = "persist.gesture.swapbuttons";
 
     public static final String USB_FASTCHARGE_KEY = "usb_fastcharge";
-    public static final String USB_FASTCHARGE_PROP = "persist.gesture.usbfastcharge";
+    public static final String USB_FASTCHARGE_PROP = "persist.charge.usbfastcharge";
 
     private SwitchPreference mButtonSwap;
     private SwitchPreference mPalmSleep;

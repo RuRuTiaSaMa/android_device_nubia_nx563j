@@ -86,5 +86,5 @@ on property:persist.gesture.swapbuttons=*
 on property:persist.gesture.palmsleep=*
     write /sys/bus/i2c/devices/5-0020/palm_sleep ${persist.gesture.palmsleep}
     
-on property:persist.gesture.usbfastcharge=*
-    write /sys/kernel/fast_charge/force_fast_charge ${persist.gesture.usbfastcharge}
+on property:persist.charge.usbfastcharge=*
+    write /sys/kernel/fast_charge/force_fast_charge ${persist.charge.usbfastcharge}

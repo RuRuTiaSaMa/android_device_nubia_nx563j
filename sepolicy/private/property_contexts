@@ -1,4 +1,4 @@
 persist.gesture.swapbuttons                  u:object_r:swapbuttons_prop:s0
 persist.gesture.palmsleep                  u:object_r:palmsleep_prop:s0
-persist.gesture.usbfastcharge                  u:object_r:usbfastcharge_prop:s0
+persist.charge.usbfastcharge                  u:object_r:usbfastcharge_prop:s0
 
