@@ -79,8 +79,8 @@ public class DeviceSettings extends PreferenceFragment implements
         mPalmSleep.setChecked(SystemProperties.getBoolean(PALM_SLEEP_PROP, false));
         mPalmSleep.setOnPreferenceChangeListener(this);
 
-        mButtonSwap = (SwitchPreference) findPreference(BUTTON_SWAP_KEY);
-        mButtonSwap.setChecked(SystemProperties.getBoolean(BUTTON_SWAP_PROP, false));
+        mButtonSwap = (SwitchPreference) findPreference(BUTTONS_SWAP_KEY);
+        mButtonSwap.setChecked(SystemProperties.getBoolean(BUTTONS_SWAP_PROP, false));
         mButtonSwap.setOnPreferenceChangeListener(this);
 
         mUsbFastcharge = (SwitchPreference) findPreference(USB_FASTCHARGE_KEY);
@@ -93,7 +93,7 @@ public class DeviceSettings extends PreferenceFragment implements
     }
 
     private void setButtonSwap(boolean value) {
-        SystemProperties.set(BUTTON_SWAP_PROP, value ? "1" : "0");
+        SystemProperties.set(BUTTONS_SWAP_PROP, value ? "1" : "0");
     }
 
     private void setUsbFastcharge(boolean value) {
