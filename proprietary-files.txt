@@ -56,15 +56,7 @@ lib64/libarcsoft_night_shot.so:vendor/lib64/libarcsoft_night_shot.so
 lib64/libArcsoftAlgorithm.so:vendor/lib64/libArcsoftAlgorithm.so	
 lib64/libDualCamera_Calibration.so:vendor/lib64/libDualCamera_Calibration.so	
 lib64/libmpbase.so:vendor/lib64/libmpbase.so	
-
-lib/libblurbuster.so	
-lib/libhazebuster.so	
-lib/libfiltergenerator.so	
-lib/libts_detected_face_jni.so:vendor/lib/libts_detected_face_jni.so	
-lib64/libblurbuster.so	
-lib64/libhazebuster.so	
-lib64/libfiltergenerator.so	
-lib64/libts_detected_face_jni.so:vendor/lib64/libts_detected_face_jni.so	
+	
 vendor/lib/libflash_pmic.so	
 vendor/lib/libhal_dbg.so	
 vendor/lib/libjpegdhw.so	
@@ -500,7 +492,6 @@ etc/firmware/nubia_tp_jdi_fw.img:vendor/firmware/nubia_tp_jdi_fw.img
 
 # Display-calib
 vendor/etc/qdcm_calib_data_jdi_r63452_1080p_5p5_mipi_cmd_panel.xml
-vendor/etc/calib.cfg
 
 # Misc
 vendor/firmware/Generic_unsigned.ncd
